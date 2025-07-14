@@ -1,3 +1,4 @@
+// pages/users/index.tsx
 import React from 'react';
 import UserCard from '../../components/common/UserCard';
 import { UserProps } from '../../interfaces';
@@ -25,7 +26,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      users
+      users // Changed from posts to users
     }
   };
 }

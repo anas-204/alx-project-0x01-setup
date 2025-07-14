@@ -1,7 +1,12 @@
+// components/common/UserCard.tsx
 import React from 'react';
 import { UserProps } from '../../interfaces';
 
-const UserCard: React.FC<{ user: UserProps }> = ({ user }) => {
+interface UserCardProps {
+  user: UserProps;
+}
+
+const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white">
       <div className="px-6 py-4">

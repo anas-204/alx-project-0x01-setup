@@ -2,11 +2,7 @@
 import React from 'react';
 import { UserProps } from '../../interfaces';
 
-interface UserCardProps {
-  user: UserProps;
-}
-
-const UserCard: React.FC<UserCardProps> = ({ user }) => {
+const UserCard: React.FC<{ user: UserProps }> = ({ user }) => { // Explicit <UserProps>
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white">
       <div className="px-6 py-4">
